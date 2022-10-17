@@ -6,8 +6,9 @@ const {UserAccountInfo} = require("../../../Sequelize/models")
 router.get("/testUrl", async (req, res) => {
     const userAccountInfoToGet = await UserAccountInfo.findAll()
     if (userAccountInfoToGet) {
+        console.log(userAccountInfoToGet);
         res.status(200)
-        res.send("Account info")
+        res.send(userAccountInfoToGet)
     } else {
         res.status(400).send(error)
     }
