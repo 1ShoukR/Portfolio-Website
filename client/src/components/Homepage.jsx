@@ -1,13 +1,16 @@
 import React from 'react'
-import "../assets/me.jpg"
+import MyPic from "../assets/me.jpg"
+import "../Css/homepage.css"
 
 export const Homepage = () => {
   return (
-    <div>
-      <h1>Hi. I'm Rahmin. </h1>
-      <div>
-        <h2>Welcome to my website.</h2>
-        <img src="../assets/me.jpg" alt="" />
+    <div className="homepageContainer">
+      <div className='introTitle'>
+        <h1>Hi. I'm Rahmin. </h1>
+        <h4>Welcome to my website.</h4>
+        <div className="picContainer">
+          <img className="myPic" src={MyPic} alt="picture of me" />
+        </div>
       </div>
       <div>
         <p>

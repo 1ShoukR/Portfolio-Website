@@ -1,0 +1,23 @@
+.homepageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.introTitle {
+display: flex;
+flex-direction: column;
+border: 1px solid red;
+padding: 0px;
+}
+
+.picContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myPic {
+    height: 500px;
+    border-radius: 10px;
+}
