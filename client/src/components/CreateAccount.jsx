@@ -3,6 +3,14 @@ import "../Css/createAccount.css"
 
 const CreateAccount = () => {
   const handleSubmit = (e) => {
+    console.log(
+      e.target.form[0].value,
+      e.target.form[1].value,
+      e.target.form[2].value,
+      e.target.form[3].value,
+      e.target.form[4].value,
+      e.target.form[5].value
+    );
     e.preventDefault();
     console.log('I am working')
   }
