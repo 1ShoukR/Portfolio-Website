@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const {UserAccountInfo} = require("../../../Sequelize/models")
+const { UserAccountInfo } = require("../../../Sequelize/models")
 
 
 router.get("/testUrl", async (req, res) => {
+    console.log("I am hitting")
     const userAccountInfoToGet = await UserAccountInfo.findAll()
     if (userAccountInfoToGet) {
         console.log(userAccountInfoToGet);
