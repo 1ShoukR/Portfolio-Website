@@ -12,6 +12,8 @@ import Resume from './components/Resume';
 import Navbar from './components/Navbar';
 import ContactMe from './components/ContactMe';
 import Projects from './components/Projects';
+import CreateAccount from './components/CreateAccount';
+import { About } from './components/About';
 
 
 
@@ -27,9 +29,11 @@ root.render(
       <Navbar />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/ContactMe" element={<ContactMe />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/Resume" element={<Resume />} />
+        <Route path="/Contact_Me" element={<ContactMe/>} />
+        <Route path="/Projects" element={<Projects/>} />
+        <Route path="/Resume" element={<Resume/>} />
+        <Route path="/create_account" element={<CreateAccount/>} />
+        <Route path="/About" element={<About/>} />
       </Routes>
     </Provider>
   </BrowserRouter>
