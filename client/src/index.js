@@ -7,9 +7,11 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 import rootReducer from './reducers/rootReducer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Homepage } from './components/About.jsx';
+import { Homepage } from './components/Homepage';
 import Resume from './components/Resume';
 import Navbar from './components/Navbar';
+import ContactMe from './components/ContactMe';
+import Projects from './components/Projects';
 
 
 
@@ -25,7 +27,8 @@ root.render(
       <Navbar />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/About" element={<Homepage />} />
+        <Route path="/ContactMe" element={<ContactMe />} />
+        <Route path="/Projects" element={<Projects />} />
         <Route path="/Resume" element={<Resume />} />
       </Routes>
     </Provider>

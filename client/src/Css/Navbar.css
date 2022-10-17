@@ -1,0 +1,6 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px;
+    gap: 40px;
+}
