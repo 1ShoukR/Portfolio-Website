@@ -3,7 +3,7 @@ const router = express.Router();
 const {UserAccountInfo} = require("../../../Sequelize/models")
 
 
-router.get("./testUrl", async (req, res) => {
+router.get("/testUrl", async (req, res) => {
     const userAccountInfoToGet = await UserAccountInfo.findAll()
     if (userAccountInfoToGet) {
         res.status(200)
