@@ -1,13 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .homepageContainer {
     display: flex;
     flex-direction: column;
+
+}
+
+.introTitleContainer {
+display: flex;
+flex-direction: column;
+padding: 0px;
 }
 
 .introTitle {
-display: flex;
-flex-direction: column;
-border: 1px solid red;
-padding: 0px;
+    display: flex;
 }
 
 .picContainer {
@@ -17,7 +26,46 @@ padding: 0px;
     align-items: center;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    color: white;
+}
+
+
+.picContainer {
+    display: flex;
+    flex-direction: row;
+}
+
 .myPic {
-    height: 500px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding-left: 50px;
+}
+
+.myPicSpecifics {
+    height: 350px;
+    width: 350px;
+}
+
+.pictureContainer {
+    padding-right: 50px;
+}
+
+
+.description {
+    display: flex;
+    color: 	#F0EAD6;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    width: 600px;
+    padding-right: 40px;
+    height: 350px;
+    text-align: left;
 }

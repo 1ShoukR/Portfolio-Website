@@ -1,7 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 .navbar-container {
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 3.5vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #202020;
+    padding: 25px;
+    color: white;
 }
 
 .NAV {
@@ -14,7 +23,7 @@
 .NAV-INNER {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
 }
 
 li {
