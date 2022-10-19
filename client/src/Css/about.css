@@ -3,13 +3,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #F0EAD6;
     margin: 0px;
 }
 
 .aboutTitle {
-    color: white;
+    color: #F0EAD6;
     text-decoration: underline;
     text-align: center;
     cursor: pointer;
+}
+
+
+.CardInfoContainer {
+    color: #F0EAD6;
 }

@@ -12,6 +12,7 @@ const store = new SequelizeStore({
 const userAccountInfoRoute = require('./Routes/usersAccountInfo')
 const guestLoginRoute = require('./Routes/guestLogin')
 const userLoginRoute = require('./Routes/userLogin')
+const projectsRoute = require("./Routes/ProjectsRoutes")
 
 
 
@@ -42,6 +43,6 @@ app.use(cors());
 app.use('/accountInfo', userAccountInfoRoute);
 app.use('/guest_login', guestLoginRoute)
 app.use('/user_login', userLoginRoute)
-
+app.use('/all_projects', projectsRoute)
 
 app.listen(PORT, console.log(`Listening on port ${PORT}`));
