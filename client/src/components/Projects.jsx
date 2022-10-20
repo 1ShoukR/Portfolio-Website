@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 
 const Projects = () => {
+  const localHostUrl = `http://127.0.0.1:3004/all_projects/get_all_projects`
   const getProjects = async () =>{
     let data
     data = await fetch(
