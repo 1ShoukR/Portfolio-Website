@@ -12,8 +12,10 @@ const Projects = () => {
   }, [dispatch])
   return (
     <div className='projectsContainer'>
-      <h1>Projects</h1>
-      <div>
+      <div className='projectsPageTitle'>
+        <h1>Projects</h1>
+      </div>
+      <div className='projectsCard'>
         <ProjectsCard projects={projects} />
       </div>
     </div>
