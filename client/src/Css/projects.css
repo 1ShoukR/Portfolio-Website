@@ -3,6 +3,14 @@
 }
 
 
+.projectsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
 
 
 .projectsContainer, .projectsPageTitle, .projectInfoTechUsedDescription, .projectCardInfoPicContainer,
@@ -22,6 +30,14 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.projectCardInfoTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
 
 

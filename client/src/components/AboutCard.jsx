@@ -22,8 +22,7 @@ const AboutCard = () => {
         bgcolor: 'text.secondary',
         }}
         variant="outlined"
-        className="card"
-    >
+        className="card">
         <h1 className="aboutTitle" onClick={handleClick}>Click to learn more about me!</h1>
         {visibleBio ? <AboutCardInfo /> : ""}
     </Card>

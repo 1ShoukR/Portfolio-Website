@@ -1,19 +1,30 @@
-.container {
+.formContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-
+    margin: 0px;
+    padding: 0px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+}
+
+.formHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-control {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

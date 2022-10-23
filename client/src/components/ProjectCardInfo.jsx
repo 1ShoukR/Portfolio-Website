@@ -13,7 +13,9 @@ const ProjectCardInfo = (props) => {
 //       };
 return (
     <div className="projectCardInfoContainer">
-        <h1>{props?.project?.title}</h1>
+        <div className='projectCardInfoTitle'>
+            <h1>{props?.project?.title}</h1>
+        </div>
         <div className='projectCardInfoPicContainer'>
         <img className='projectCardInfoPic' onClick={() => gitHubLinkHandleClick(props)} src={props?.project?.projectPic} alt="projectPicture" />
         </div>

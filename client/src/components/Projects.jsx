@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <div className='projectsContainer'>
       <div className='projectsPageTitle'>
-        <h1>Projects</h1>
+        <h1>Here Are My Current Projects</h1>
       </div>
       <div className='projectsCard'>
         <ProjectsCard projects={projects} />

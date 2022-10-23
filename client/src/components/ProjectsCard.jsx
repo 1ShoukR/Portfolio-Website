@@ -11,7 +11,7 @@ const ProjectsCard = (props) => {
         <Card
         sx={{
             display: 'flex',
-            marginTop: '300px',
+            marginTop: '20px',
             width: '920px',
             padding: '20px',
             flexDirection: 'column',
