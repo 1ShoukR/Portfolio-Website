@@ -3,9 +3,6 @@ import { handleSubmit } from '../actions/handleSubmit';
 import "../Css/createAccount.css"
 
 const CreateAccount = () => {
-  const sendFormData = async () => {
-    
-  }
   return (
     <div className="formContainer">
       <form className="form">

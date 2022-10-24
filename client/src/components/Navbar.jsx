@@ -40,6 +40,11 @@ const Navbar = () => {
               <p>Create an Account</p>
             </Link>
           </li>
+          <li>
+            <Link to="/login">
+              <p>Login</p>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

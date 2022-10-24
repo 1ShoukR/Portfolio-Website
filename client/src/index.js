@@ -14,6 +14,7 @@ import ContactMe from './components/ContactMe';
 import Projects from './components/Projects';
 import CreateAccount from './components/CreateAccount';
 import { About } from './components/About';
+import LoginPage from './components/LoginPage';
 
 
 
@@ -33,6 +34,7 @@ root.render(
         <Route path="/Projects" element={<Projects/>} />
         <Route path="/Resume" element={<Resume/>} />
         <Route path="/create_account" element={<CreateAccount/>} />
+        <Route path="/Login" element={<LoginPage/>} />
         <Route path="/About" element={<About/>} />
       </Routes>
     </Provider>

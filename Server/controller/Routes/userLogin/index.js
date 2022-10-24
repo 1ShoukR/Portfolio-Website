@@ -22,6 +22,7 @@ router.post("/logout_confirm", async (req, res) => {
 // login route
 router.post("/user_login_confirm", async (req, res) => {
     const {username, password } = req.body
+    console.log("This is req.body", req.body)
     if (!username || !password) {
         res.status(400).send("Invalid Credentials")
     }
@@ -29,15 +30,13 @@ router.post("/user_login_confirm", async (req, res) => {
         const getUser = await UserAccountInfo.findOne({
             where: {
                 username: req.body.username,
-                password: req.body.password
             }
         })
         console.log("this is getUser variable", getUser)
         const userWeFound = getUser.dataValues
         const validatePassword = await bcrypt.compare(password, userWeFound.password);
-        if (!validatePassword) {
-            res.status(400).send("That user does not exist")
-        } else {
+        console.log("This is validated Password", validatePassword)
+        if (validatePassword) {
             console.log("User we found", userWeFound)
             req.session.user = userWeFound
             res.send(
@@ -47,8 +46,10 @@ router.post("/user_login_confirm", async (req, res) => {
                     lastName: getUser.lastName,
                     email: getUser.email,
                 })
-            )
-        }
+                )
+            } else {
+				res.status(400).send("That user does not exist")
+		}
     } catch (error) {
         res.status(400).send(error)
     }
