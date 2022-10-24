@@ -1,6 +1,6 @@
 import { sendLoginInfo } from "./sendLoginInfo"
 
-export const handleLoginPageSubmit = async (e, navigate) => {
+export const handleLoginPageSubmit = async (e) => {
     e.preventDefault()
     let input = {
         username: e.target.form[0].value,
@@ -8,8 +8,8 @@ export const handleLoginPageSubmit = async (e, navigate) => {
     }
     if (input) {
         await sendLoginInfo(input)
+        console.log("You are logged in")
         alert("You are logged in!")
-        navigate('/');
     } else {
         alert("does not Credentials")
     }

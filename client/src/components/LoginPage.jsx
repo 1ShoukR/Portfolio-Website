@@ -2,7 +2,7 @@ import React from "react";
 import { handleLoginPageSubmit } from "../actions/handleLoginPageSubmit";
 import { useNavigate } from 'react-router-dom';
 import "../Css/createAccount.css"
-const LoginPage = (e) => {
+const LoginPage = () => {
     const navigate = useNavigate()
   return (
 <div className="formContainer">
@@ -18,7 +18,7 @@ const LoginPage = (e) => {
             <label htmlFor="Password">Password</label>
             <input type="text" className="lastName" placeholder="Enter Password" required/>
         </div>
-        <button onClick={() => {handleLoginPageSubmit(e, navigate)}} type="submit">Submit</button>
+        <button onClick={handleLoginPageSubmit} type="submit">Submit</button>
     </form>
     </div>
 ) 

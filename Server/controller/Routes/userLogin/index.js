@@ -47,6 +47,7 @@ router.post("/user_login_confirm", async (req, res) => {
                     email: getUser.email,
                 })
                 )
+                console.log("USER LOGGED IN")
             } else {
 				res.status(400).send("That user does not exist")
 		}
