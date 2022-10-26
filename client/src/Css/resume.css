@@ -21,7 +21,6 @@
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
 .container .left_Side {
     position: relative;
