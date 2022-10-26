@@ -19,5 +19,6 @@ export const sendLoginInfo = async (dispatch, input) => {
 	console.log('This is response', response.status);
 	if (response.status === 200) {
 		dispatch({ type: 'SET_LOGGEDIN', payload: true });
+    dispatch({type: "SET_USER_LOGIN_INFORMATION", payload: json})
 	}
 };

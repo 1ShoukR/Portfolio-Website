@@ -1,13 +1,16 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import '../Css/Navbar.css'
 
 
 
 const Navbar = () => {
-  const navigate = useNavigate()
+  const loggedIn = useSelector((state) => state.loggedIn.loggedIn);
+  const userAccountInfo = useSelector((state) => state.loggedIn.userLoginData)
   return (
     <div className="navbar-container">
+      {loggedIn}
       <nav className="NAV">
         <ul className="NAV-INNER">
           <li>

@@ -1,14 +1,10 @@
 import React from "react";
 import { handleLoginPageSubmit } from "../actions/handleLoginPageSubmit";
-import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import "../Css/createAccount.css"
 const LoginPage = () => {
-    const navigate = useNavigate();
     const dispatch = useDispatch()
-    const loggedIn = useSelector((state) => state.loggedIn.loggedIn)
     const debug = console.log()
-    // 
     return (
 <div className="formContainer">
         <form className="form">
