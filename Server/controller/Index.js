@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const session = require('express-session');
@@ -13,6 +14,7 @@ const userAccountInfoRoute = require('./Routes/usersAccountInfo')
 const guestLoginRoute = require('./Routes/guestLogin')
 const userLoginRoute = require('./Routes/userLogin')
 const projectsRoute = require("./Routes/ProjectsRoutes")
+const mailRoutes = require("./Routes/mailRoutes")
 
 
 
@@ -44,5 +46,6 @@ app.use('/accountInfo', userAccountInfoRoute);
 app.use('/guest_login', guestLoginRoute)
 app.use('/user_login', userLoginRoute)
 app.use('/all_projects', projectsRoute)
+app.use('/send_mail', mailRoutes)
 
 app.listen(PORT, console.log(`Listening on port ${PORT}`));

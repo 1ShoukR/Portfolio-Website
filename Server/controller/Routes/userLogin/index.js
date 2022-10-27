@@ -6,16 +6,33 @@ const { UserAccountInfo } = require('../../../Sequelize/models');
 
 
 //logout route
-// router.get("/logout", (req, res) => {
-// res.status(200).send("you are on the logout route")
-// });
 
 router.post("/logout_confirm", async (req, res) => {
-    // req.session.user = null;
-    // res.render("loginPage.html");
-    // res.redirect("http://127.0.0.1:3005/basic_homepage");
+    req.session.user = null;
     res.status(200).send('I have logged out');
 })
+
+
+
+
+
+// delete account route
+
+router.post("/delete_account", async (req, res) => {
+        const deleteUser = await UserAccountInfo.findOne({
+            where: {
+                id: req.session.user.id
+            }
+        })
+        if (deleteUser) {
+            await deleteUser.destroy()
+            res.status(200).send("User account deleted")
+        } else {
+            res.status(400).send("This user does not exist")
+        }
+})
+
+
 
 
 
@@ -56,7 +73,13 @@ router.post("/user_login_confirm", async (req, res) => {
     }
 })
 
+
+
+
+
 //create a user 
+
+
 router.post("/create_account", async (req, res) => {
     const { firstName, lastName, email, username, password } = req.body
     try {
@@ -91,6 +114,10 @@ router.post("/create_account", async (req, res) => {
         console.log(error)
     }
 })
+
+
+
+
 
 
 // guest login
