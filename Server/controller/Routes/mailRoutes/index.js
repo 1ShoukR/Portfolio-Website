@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const multiparty = require('multiparty');
-require('dotenv').config()
+require('dotenv').config();
 
 let transport = nodemailer.createTransport({
 	service: 'gmail',
