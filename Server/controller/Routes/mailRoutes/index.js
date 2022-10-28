@@ -4,18 +4,19 @@ const nodemailer = require('nodemailer');
 const multiparty = require('multiparty');
 require('dotenv').config()
 
-const transporter = nodemailer.createTransport({
-	host: 'smtp.gmail.com', //replace with your email provider
+let transport = nodemailer.createTransport({
+	service: 'gmail',
 	port: 587,
+	secure: true,
 	auth: {
 		user: process.env.EMAIL,
 		pass: process.env.PASS,
 	},
 });
 
-transporter.verify(function (error, success) {
+transport.verify(function (error, success) {
 	if (error) {
-		console.log("this is error",error);
+		console.log(error);
 	} else {
 		console.log('Server is ready to take our messages');
 	}
@@ -24,12 +25,27 @@ transporter.verify(function (error, success) {
 
 router.post("/send_mail_confirm", async (req, res) => {
  try {
-    console.log("This is frontend contact me message " , req.body)
+    console.log(req.body)
+        let mail = {
+            from: req.body.email,
+            to: "rahminshoukoohi@gmail.com",
+            subject: "Contact Me Form",
+            text: req.body.message
+        }
+        console.log("This is mail variable",mail)
+        transport.sendMail(mail, function(err, data) {
+            if (err) {
+                console.log('error happened', err)
+            } else {
+                console.log('email sent')
+            }
+        })
     res.status(200).send(JSON.stringify("message received!"))
  } catch (error) {
     console.log(error)
  }
 })
+
 
 
 
