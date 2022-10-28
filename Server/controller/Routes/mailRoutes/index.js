@@ -27,8 +27,8 @@ router.post("/send_mail_confirm", async (req, res) => {
  try {
     console.log(req.body)
         let mail = {
-            from: req.body.email,
-            to: "rahminshoukoohi@gmail.com",
+            replyTo: req.body.email,
+            to: process.env.EMAIL,
             subject: "Contact Me Form",
             text: req.body.message
         }
