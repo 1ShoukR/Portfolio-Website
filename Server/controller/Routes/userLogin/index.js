@@ -56,6 +56,7 @@ router.post("/user_login_confirm", async (req, res) => {
         if (validatePassword) {
             console.log("User we found", userWeFound)
             req.session.user = userWeFound
+            console.log('This is session', req.session);
             res.send(
                 JSON.stringify({
                     username: getUser.username,
