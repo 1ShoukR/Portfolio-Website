@@ -9,7 +9,7 @@ const Resume = () => {
 				<div className="left_Side">
 					<div className="profileText">
 						<div className="imgBx">
-							<img alt='me' className="photo" src={me} />
+							<img alt="me" className="photo" src={me} />
 						</div>
 						<br />
 						<h2>
@@ -77,11 +77,6 @@ const Resume = () => {
 									Development
 								</h4>
 								<h4>DigitalCrafts Web Development Bootcamp</h4>
-							</li>
-							<li>
-								<h5>1997 - 2007</h5>
-								<h4>Matriculation </h4>
-								<h4>University Name</h4>
 							</li>
 						</ul>
 					</div>
@@ -155,23 +150,28 @@ const Resume = () => {
 							<div className="text">
 								<h4>Software Developer</h4>
 								<p>
-                  ● Enganged in classroom study of web development tools, including, but not limited to, Node.JS,
-                  Express.JS, REST APIs, Python, Git, SQL, PostgreSQL, Sequelize, Beekeeper, Postman, React,
-                  Redux, Javascript, Typescript, HTML5, APIs, CSS, and CSS Frameworks<br />
-                  ● Participated in SCRUM and AGILE methodologies while developing software
-                </p>
+									● Enganged in classroom study of web development tools,
+									including, but not limited to, Node.JS, Express.JS, REST APIs,
+									Python, Git, SQL, PostgreSQL, Sequelize, Beekeeper, Postman,
+									React, Redux, Javascript, Typescript, HTML5, APIs, CSS, and
+									CSS Frameworks
+									<br />● Participated in SCRUM and AGILE methodologies while
+									developing software
+								</p>
 							</div>
 						</div>
 						<div className="box">
 							<div className="year_company">
-								<h5>2016 - 2018</h5>
-								<h5>Company Name</h5>
+								<h5>2017 - 2019</h5>
+								<h5>Atlanta Oral and Facial Surgery</h5>
 							</div>
 							<div className="text">
-								<h4>Junior UX Developer</h4>
+								<h4>Oral Surgery Intern</h4>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									● Oversaw and created a daily patient schedule and shadowed under Dr. Wunderlee Jr. <br/> ● Maintained
+									sanitation of the OR room <br/> ● Prepared utensils before patients
+									are brought into the room <br/> ● Observed multiple OR surgeries and
+									check ups from patient post OP check-ups
 								</p>
 							</div>
 						</div>

@@ -2,15 +2,20 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import '../Css/Navbar.css'
+import NavbarConditional from './NavbarConditional';
 
 
 
 const Navbar = () => {
   const loggedIn = useSelector((state) => state.loggedIn.loggedIn);
+  console.log("This is loggedIn variable", loggedIn)
   const userAccountInfo = useSelector((state) => state.loggedIn.userLoginData)
+  console.log("This is userAccountInfo", userAccountInfo)
+  if (loggedIn) {
+    return <NavbarConditional userAccountInfo={userAccountInfo} />;
+  }
   return (
     <div className="navbar-container">
-      {loggedIn}
       <nav className="NAV">
         <ul className="NAV-INNER">
           <li>

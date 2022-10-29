@@ -13,11 +13,11 @@ const LoginPage = () => {
         </div>
         <div className="form-control">
             <label htmlFor='username'>username</label>
-            <input type="text" className="username" placeholder="Enter username" required/>
+            <input type="username" className="username" placeholder="Enter username" required/>
         </div>
         <div className="form-control">
-            <label htmlFor="Password">Password</label>
-            <input type="text" className="lastName" placeholder="Enter Password" required/>
+            <label htmlFor="Password" >Password</label>
+            <input type="password" className="passwordField" placeholder="Enter Password" required/>
         </div>
         <button onClick={(e) => handleLoginPageSubmit(e, dispatch)} type="submit">Submit</button>
     </form>
