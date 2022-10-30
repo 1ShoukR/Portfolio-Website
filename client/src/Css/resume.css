@@ -138,6 +138,8 @@
     padding: 66px;
 }
 .about {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 50px;
 }
 .about:last-child {
@@ -170,6 +172,17 @@
     font-size: 16px;
     text-decoration: underline;
 }
+
+.resumePDF {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .techStack {
     text-transform: uppercase;

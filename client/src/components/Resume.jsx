@@ -1,5 +1,7 @@
 import React from 'react'
 import me from "../assets/me.jpg"
+import ResumePDF from "../assets/Rahmin Shoukoohi Resume.pdf"
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import "../Css/resume.css"
 
 const Resume = () => {
@@ -92,7 +94,7 @@ const Resume = () => {
 						</ul>
 						<ul>
 							<li>
-								<span className="text">Russian</span>
+								<span className="text">Farsi</span>
 								<span className="percent">
 									<div data-language="russian"></div>
 								</span>
@@ -100,7 +102,7 @@ const Resume = () => {
 						</ul>
 						<ul>
 							<li>
-								<span className="text">French</span>
+								<span className="text">Spanish</span>
 								<span className="percent">
 									<div data-language="french"></div>
 								</span>
@@ -111,6 +113,12 @@ const Resume = () => {
 				<div className="right_Side">
 					<div className="about">
 						<h2 className="title2">Profile</h2>
+						<div className="resumePDF">
+							<p>Download my Resume here!</p>
+							<a href={ResumePDF} target="_blank">
+								<PictureAsPdfIcon/>
+							</a>
+						</div>
 						<p>
 							As a passionate and motivated professional, I’m constantly
 							striving to improve my techniques, expand my skillset and find new
@@ -141,7 +149,6 @@ const Resume = () => {
 								</p>
 							</div>
 						</div>
-
 						<div className="box">
 							<div className="year_company">
 								<h5>2022 - 2022</h5>
@@ -168,9 +175,10 @@ const Resume = () => {
 							<div className="text">
 								<h4>Oral Surgery Intern</h4>
 								<p>
-									● Oversaw and created a daily patient schedule and shadowed under Dr. Wunderlee Jr. <br/> ● Maintained
-									sanitation of the OR room <br/> ● Prepared utensils before patients
-									are brought into the room <br/> ● Observed multiple OR surgeries and
+									● Oversaw and created a daily patient schedule and shadowed
+									under Dr. Wunderlee Jr. <br /> ● Maintained sanitation of the
+									OR room <br /> ● Prepared utensils before patients are brought
+									into the room <br /> ● Observed multiple OR surgeries and
 									check ups from patient post OP check-ups
 								</p>
 							</div>
