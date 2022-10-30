@@ -1,5 +1,6 @@
 import React from 'react';
 import MyPic from '../assets/me.jpg';
+import { Button } from '@mui/material';
 import { Card } from '@mui/material';
 
 const Description = () => {
@@ -9,21 +10,18 @@ return (
 			<Card
 				sx={{
 					display: 'flex',
-					width: '920px',
+					width: '1000px',
 					flexDirection: 'row',
-					padding: '25px',
+					padding: '40px',
 					borderRadius: '16px',
 					boxShadow: 3,
 					bgcolor: 'text.secondary',
 				}}>
 				<div className="pictureContainer">
-					<img
-						className="myPicSpecifics rounded-md"
-						src={MyPic}
-						alt="me"
-					/>
+					<img className="myPicSpecifics" src={MyPic} alt="me" />
 				</div>
 				<div className="description">
+					<h1 className='aLittleAboutMe'>A little about me</h1>
 					<p>
 						I am incredibly passionate about all things tech! I have attended
 						and graduated the DigitalCrafts Web Development Bootcamp to learn
@@ -32,15 +30,31 @@ return (
 						coding continues to grow exponentially as I learn more and more
 						about the intricacies and nuances of each language that I pursue!
 					</p>
-					<div>
-						<a href="/Resume">
-							<button>Resume</button>
-						</a>
-					</div>
-					<div>
-						<a href="/Contact_Me">
-							<button>Contact Me</button>
-						</a>
+					<div className="buttonWrapper">
+						<div>
+							<a href="/Resume">
+								<Button
+									variant="outlined"
+									sx={{
+										padding: '10px',
+										color: '#F0EAD6',
+									}}>
+									Resume
+								</Button>
+							</a>
+						</div>
+						<div>
+							<a href="/Contact_Me">
+								<Button
+									variant="outlined"
+									sx={{
+										padding: '10px',
+										color: '#F0EAD6',
+									}}>
+									Contact Me
+								</Button>
+							</a>
+						</div>
 					</div>
 				</div>
 			</Card>
