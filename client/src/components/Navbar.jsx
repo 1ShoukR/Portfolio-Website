@@ -8,9 +8,7 @@ import NavbarConditional from './NavbarConditional';
 
 const Navbar = () => {
   const loggedIn = useSelector((state) => state.loggedIn.loggedIn);
-  console.log("This is loggedIn variable", loggedIn)
   const userAccountInfo = useSelector((state) => state.loggedIn.userLoginData)
-  console.log("This is userAccountInfo", userAccountInfo)
   if (loggedIn) {
     return <NavbarConditional userAccountInfo={userAccountInfo} />;
   }
