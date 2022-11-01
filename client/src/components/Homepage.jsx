@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Css/homepage.css"
 import Description from './Description';
+import Resume from './Resume'
 
 export const Homepage = () => {
   return (
@@ -17,6 +18,9 @@ export const Homepage = () => {
           <Description/>
         </div>
       </div>
+    </div>
+    <div>
+      
     </div>
     </>
   );

@@ -38,6 +38,16 @@ padding: 0px;
     text-decoration: underline;
 }
 
+.descriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
 .picContainer {
     display: flex;
     flex-direction: row;
@@ -47,17 +57,23 @@ padding: 0px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    padding-left: 50px;
 }
 
 .myPicSpecifics {
-    height: 450px;
-    width: 450px;
-    border-radius: 80%;
+width: 100%; 
+height: auto;
 }
 
 .pictureContainer {
-    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 300px; 
+    height: 300px; 
+    overflow: hidden; 
+    border-radius: 50%;
 }
 
 

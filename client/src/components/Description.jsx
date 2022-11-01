@@ -16,20 +16,26 @@ return (
 					borderRadius: '16px',
 					boxShadow: 3,
 					bgcolor: 'text.secondary',
+					gap: "30px"
 				}}>
-				<div className="pictureContainer">
-					<img className="myPicSpecifics" src={MyPic} alt="me" />
+				<div className='pictureWrapper'>
+					<div className="pictureContainer">
+						<img className="myPicSpecifics" src={MyPic} alt="me" />
+					</div>
 				</div>
-				<div className="description">
-					<h1 className='aLittleAboutMe'>A little about me</h1>
-					<p>
-						I am incredibly passionate about all things tech! I have attended
-						and graduated the DigitalCrafts Web Development Bootcamp to learn
-						Full-Stack Web Development in order to jumpstart my career in tech,
-						and it is the best decision I have ever made in my life. My love for
-						coding continues to grow exponentially as I learn more and more
-						about the intricacies and nuances of each language that I pursue!
-					</p>
+				<div className="descriptionWrapper">
+					<div className="description">
+						<h1 className="aLittleAboutMe">A little about me</h1>
+						<p>
+							I am incredibly passionate about all things tech! I have attended
+							and graduated the DigitalCrafts Web Development Bootcamp to learn
+							Full-Stack Web Development in order to jumpstart my career in
+							tech, and it is the best decision I have ever made in my life. My
+							love for coding continues to grow exponentially as I learn more
+							and more about the intricacies and nuances of each language that I
+							pursue!
+						</p>
+					</div>
 					<div className="buttonWrapper">
 						<div>
 							<a href="/Resume">
