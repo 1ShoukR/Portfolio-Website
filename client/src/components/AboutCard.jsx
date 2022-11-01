@@ -6,14 +6,13 @@ import AboutCardInfo from './AboutCardInfo';
 const AboutCard = () => {
     const [visibleBio, setVisibleBio] = useState(false);
     const handleClick = () => {
-        console.log("I am clicking")
         setVisibleBio(!visibleBio)
     }
   return (
     <Card
         sx={{
         display: 'flex',
-        marginTop: '300px',
+        marginTop: '100px',
         width: '920px',
         padding: '20px',
         flexDirection: 'column',
@@ -23,8 +22,8 @@ const AboutCard = () => {
         }}
         variant="outlined"
         className="card">
-        <h1 className="aboutTitle" onClick={handleClick}>Click to learn more about me!</h1>
-        {visibleBio ? <AboutCardInfo /> : ""}
+        <h1 className={`aboutTitle ${visibleBio ? "aboutTitleAfterClick" : ""}`} onClick={handleClick}>Click to learn more about me!</h1>
+        {visibleBio ? <AboutCardInfo /> : "" }
     </Card>
     );
 }
