@@ -114,9 +114,9 @@ const Resume = () => {
 					<div className="about">
 						<h2 className="title2">Profile</h2>
 						<div className="resumePDF">
-							<p>Download my Resume here!</p>
-							<a href={ResumePDF} target="_blank">
-								<PictureAsPdfIcon/>
+							<a className="pdfDownload" href={ResumePDF} target="_blank">
+								<p>Download my Resume here!</p>
+								<PictureAsPdfIcon />
 							</a>
 						</div>
 						<p>
@@ -170,7 +170,9 @@ const Resume = () => {
 						<div className="box">
 							<div className="year_company">
 								<h5>2017 - 2019</h5>
-								<h5>Atlanta Oral and Facial Surgery</h5>
+								<h5>
+									Atlanta Oral <br /> and Facial Surgery
+								</h5>
 							</div>
 							<div className="text">
 								<h4>Oral Surgery Intern</h4>
@@ -189,7 +191,7 @@ const Resume = () => {
 							<div className="about skills">
 								<h2 className="title2">Professionals skills</h2>
 								<div className="box">
-									<h1 className="techStack">Frontend</h1>
+									<h1 className="frontend">Frontend</h1>
 								</div>
 								<div className="box">
 									<h4>React.JS</h4>
@@ -220,7 +222,7 @@ const Resume = () => {
 						<div className="about skills">
 							<div className="rightSideSkills">
 								<div className="box">
-									<h1 className="techStack">Backend</h1>
+									<h1 className="backend">Backend</h1>
 								</div>
 								<div className="box">
 									<h4>Node.JS</h4>

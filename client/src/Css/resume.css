@@ -184,7 +184,19 @@
 }
 
 
-.techStack {
+.pdfDownload {
+    display: flex;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.backend {
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.frontend {
     text-transform: uppercase;
     font-weight: bolder;
     text-decoration: underline;
@@ -253,6 +265,16 @@
 .englishw50 {
     width: 60%;
 }
+
+.frontend {
+    margin-top: 6px;
+}
+
+.title2{
+    display: flex;
+    width: max-content;
+}
+
 .russianw90 {
     width: 90%;
 }
