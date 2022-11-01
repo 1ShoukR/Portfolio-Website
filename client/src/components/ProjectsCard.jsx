@@ -4,7 +4,7 @@ import ProjectCardInfo from './ProjectCardInfo';
 import "../Css/projectsCard.css"
 
 const ProjectsCard = (props) => {
-    console.log("This is props", props?.projects[0])
+  console.log(props?.projects[0]);
   return (
     <div className='projectsCardContainer'>
       {props?.projects[0]?.map((project) => (
@@ -14,7 +14,7 @@ const ProjectsCard = (props) => {
             marginTop: '20px',
             width: '920px',
             padding: '20px',
-            flexDirection: 'column',
+            flexDirection: 'column-reverse',
             borderRadius: '16px',
             boxShadow: 3,
             bgcolor: 'text.secondary',

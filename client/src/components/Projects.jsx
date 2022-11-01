@@ -11,15 +11,21 @@ const Projects = () => {
     setProjects(dispatch)
   }, [dispatch])
   return (
-    <div className='projectsContainer'>
-      <div className='projectsPageTitle'>
-        <h1>Here Are My Current Projects</h1>
-      </div>
-      <div className='projectsCard'>
-        <ProjectsCard projects={projects} />
-      </div>
-    </div>
-  );
+		<div className="projectsContainer">
+			<div className="projectsPageTitle">
+				<h1>Here Are My Current Projects</h1>
+			</div>
+			<div>
+				<p>Below is a list of projects that I have created.</p>
+			</div>
+			<div>
+				<p>Click on the image to go to the respective GitHub repo</p>
+			</div>
+			<div className="projectsCard">
+				<ProjectsCard projects={projects} />
+			</div>
+		</div>
+	);
 }
 
 export default Projects
