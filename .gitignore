@@ -1,6 +1,6 @@
-Server/.env
+app/.env
 node_modules
 config
+client/.env
 
-
-Server/controller/.env
+app/controller/.env

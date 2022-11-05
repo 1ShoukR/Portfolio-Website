@@ -1,5 +1,5 @@
 export const sendAccountInfo = async (input) => {
-    const url = 'http://127.0.0.1:3004/user_login/create_account';
+    const url =`${process.env.ROOT_URL}/user_login/create_account`;
     let response = await fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
