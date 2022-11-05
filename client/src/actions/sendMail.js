@@ -1,6 +1,6 @@
 export const sendMail = async (form) => {
     let response = await fetch(
-			`${process.env.ROOT_URL}/send_mail/send_mail_confirm`,
+			`http://portfoliowebsite-env.eba-epte4yiv.us-east-1.elasticbeanstalk.com/send_mail/send_mail_confirm`,
 			{
 				method: 'POST', // *GET, POST, PUT, DELETE, etc.
 				mode: 'cors', // no-cors, *cors, same-origin

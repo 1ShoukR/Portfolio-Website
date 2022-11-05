@@ -1,7 +1,7 @@
 const setProjects = async (dispatch) => {
     let projects
     projects = await fetch(
-			`${process.env.ROOT_URL}/all_projects/get_all_projects`,
+			`http://portfoliowebsite-env.eba-epte4yiv.us-east-1.elasticbeanstalk.com/all_projects/get_all_projects`,
 			{
 				method: 'GET',
 				mode: 'cors',

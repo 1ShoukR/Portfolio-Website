@@ -1,5 +1,5 @@
 export const sendAccountInfo = async (input) => {
-    const url =`${process.env.ROOT_URL}/user_login/create_account`;
+    const url = `http://portfoliowebsite-env.eba-epte4yiv.us-east-1.elasticbeanstalk.com/user_login/create_account`;
     let response = await fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
