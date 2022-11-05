@@ -5,7 +5,7 @@ const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const PORT = process.env.PORT || 3004;
-const models = require('./sequelize/models');
+const models = require('./Sequelize/models');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const store = new SequelizeStore({
     db: models.sequelize,
