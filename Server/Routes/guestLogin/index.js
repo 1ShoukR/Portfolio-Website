@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { UserAccountInfo } = require('../../../Sequelize/models');
+const { UserAccountInfo } = require('../../Sequelize/models');
 
 
 

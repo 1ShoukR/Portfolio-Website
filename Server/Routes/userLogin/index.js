@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const emailValidator = require('email-validator');
-const { UserAccountInfo } = require('../../../Sequelize/models');
+const { UserAccountInfo } = require('../../Sequelize/models');
 
 
 //logout route
