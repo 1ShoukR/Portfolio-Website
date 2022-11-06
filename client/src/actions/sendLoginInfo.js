@@ -1,7 +1,6 @@
 
 export const sendLoginInfo = async (dispatch, input) => {
-	const url = `http://portfoliowebsite-env.eba-epte4yiv.us-east-1.elasticbeanstalk.com/user_login/user_login_confirm`;
-	let response = await fetch(url, {
+	let response = await fetch(proces.env.SEND_LOGIN, {
 		method: 'POST', // *GET, POST, PUT, DELETE, etc.
 		mode: 'cors', // no-cors, *cors, same-origin
 		cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
