@@ -1,6 +1,5 @@
 export const sendAccountInfo = async (input) => {
-    const url = `http://portfoliowebsite-env.eba-epte4yiv.us-east-1.elasticbeanstalk.com/user_login/create_account`;
-    let response = await fetch(url, {
+    let response = await fetch(process.env.CREATE_ACCOUNT, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached

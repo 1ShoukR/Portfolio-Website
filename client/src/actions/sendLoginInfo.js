@@ -1,6 +1,6 @@
 
 export const sendLoginInfo = async (dispatch, input) => {
-	let response = await fetch(proces.env.SEND_LOGIN, {
+	let response = await fetch(process.env.SEND_LOGIN, {
 		method: 'POST', // *GET, POST, PUT, DELETE, etc.
 		mode: 'cors', // no-cors, *cors, same-origin
 		cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
