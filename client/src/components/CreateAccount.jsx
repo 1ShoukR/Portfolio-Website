@@ -1,39 +1,44 @@
 import React from 'react'
 import { handleSubmit } from '../actions/handleSubmit';
+import { Button } from '@mui/material';
 import "../Css/createAccount.css"
 
 const CreateAccount = () => {
   return (
-    <div className="formContainer">
-      <form className="form">
-        <div className='formHeader'>
+    <div className="formContainer ">
+      <form className="flex flex-col justify-center items-center gap-1.5 mt-20">
+        <div className='form'>
           <h2>Register an Account</h2>
         </div>
-        <div className="form-control">
+        <div className="flex flex-col justify-center items-center gap-1.5 mt-20">
           <label htmlFor='first name'>First Name</label>
-          <input type="text" className="username" placeholder="Enter First Name" required/>
+          <input type="text" className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full text-xl" placeholder="Enter First Name" required/>
         </div>
         <div className="form-control">
           <label htmlFor="Last Name">Last Name</label>
-          <input type="text" className="lastName" placeholder="Enter Last Name" required/>
+          <input type="text" className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full text-xl" placeholder="Enter Last Name" required/>
         </div>
         <div className="form-control">
           <label htmlFor="email">Email</label>
-          <input type="text" className="email" placeholder="Enter email" required/>
+          <input type="text" className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full text-xl" placeholder="Enter email" required/>
         </div>
         <div className="form-control">
           <label htmlFor="username">username</label>
-          <input type="text" className="username" placeholder="Enter username" required />
+          <input type="text" className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full text-xl" placeholder="Enter username" required />
         </div>
         <div className="form-control">
           <label htmlFor="password">Enter password</label>
-          <input type="password" className="password" placeholder="Enter your password" required/>
+          <input type="password" className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full text-xl" placeholder="Enter your password" required/>
         </div>
         <div className="form-control">
           <label htmlFor="password2">Renter password</label>
-          <input type="password" className="password2" placeholder="Renter your password" required/>
+          <input type="password" className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full text-xl" placeholder="Renter your password" required/>
         </div>
-        <button onClick={handleSubmit} type="submit">Submit</button>
+        <Button variant="outlined"
+									sx={{
+										padding: '10px',
+										color: '#F0EAD6',
+									}} onClick={handleSubmit} type="submit">Submit</Button>
       </form>
     </div>
   );

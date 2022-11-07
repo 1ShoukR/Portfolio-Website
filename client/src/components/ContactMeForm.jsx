@@ -12,6 +12,7 @@ const ContactForm = () => {
             email: e.target.form[1].value,
             message: e.target.form[2].value
         }
+		console.log("This is contact me form", form)
         await sendMail(form)
 		setTimeout(() => {
 			setSubmitted(true);
@@ -20,8 +21,14 @@ const ContactForm = () => {
 	if (submitted) {
 		return (
 			<>
-				<div className="text-2xl">Thank you!</div>
-				<div className="text-md">We'll be in touch soon.</div>
+				<div className="titleWrapper">
+					<div className="titleContainer">
+						<h1>Thank you!</h1>
+					</div>
+					<div className="titleContainer">
+						<h2>We'll be in touch soon.</h2>
+					</div>
+				</div>
 			</>
 		);
 	}
