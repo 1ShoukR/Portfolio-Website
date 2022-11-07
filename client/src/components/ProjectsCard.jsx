@@ -4,7 +4,6 @@ import ProjectCardInfo from './ProjectCardInfo';
 import "../Css/projectsCard.css"
 
 const ProjectsCard = (props) => {
-  console.log(props?.projects[0]);
   return (
     <div className='projectsCardContainer'>
       {props?.projects[0]?.map((project) => (
