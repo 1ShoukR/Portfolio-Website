@@ -1,6 +1,6 @@
 export const sendMail = async (form) => {
     let response = await fetch(
-			process.env.SEND_MAIL,
+			'https://api.rahmincodes.com/send_mail/send_mail_confirm',
 			{
 				method: 'POST', // *GET, POST, PUT, DELETE, etc.
 				mode: 'cors', // no-cors, *cors, same-origin
