@@ -69,3 +69,18 @@
 .projectCardInfoPic {
     cursor: pointer;
 }
+
+
+@media (max-width: 1190px) {
+    .projectsContainer {
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.projectCardInfoContainer {
+    border: 1px solid yellow;
+}
+}

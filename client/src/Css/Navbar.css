@@ -26,8 +26,6 @@
     gap: 40px;
     overflow-y: scroll;
     overflow: hidden;
-
-
 }
 
 .NAV-INNER.showMenu {
@@ -36,10 +34,13 @@
 
 
 .NAV button {
+    display: none;
     position: relative;
     right: 20px;
     z-index: 10;
+    background: transparent;
     cursor: pointer;
+    border: none
 }
 
 li {
@@ -49,5 +50,23 @@ li {
 
 
 @media (max-width: 1190px) {
-
+    .NAV-INNER {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    background: #202020;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    max-width: 290px;
+    z-index: 9;
+    }
+    .NAV button {
+        display: block;
+    }
 }
