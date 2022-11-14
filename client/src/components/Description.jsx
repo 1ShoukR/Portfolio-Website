@@ -6,19 +6,41 @@ import { Card } from '@mui/material';
 const Description = () => {
 return (
 	<>
-		<div className="myPic max-w-sm w-full lg:max-w-full lg:flex">
+		<div className="myPic lg:max-w-full md: flex flex-col justify-center items-center sm: flex flex-col justify-center items-center">
 			<Card
+				className="muiCARD"
 				sx={{
 					display: 'flex',
-					width: '1000px',
-					flexDirection: 'row',
+					width: {
+						xs: '480px',
+						sm: '760px',
+						md: '1000px',
+					},
+					flexDirection: {
+						xs: 'column',
+						md: 'row',
+						lg: 'row',
+						xl: 'row',
+					},
 					padding: '40px',
 					borderRadius: '16px',
 					boxShadow: 3,
 					bgcolor: 'text.secondary',
-					gap: "30px"
+					gap: '30px',
+					justifyContent: {
+						xs: 'center',
+						md: 'center',
+						lg: 'center',
+						xl: 'center',
+					},
+					alignItems: {
+						xs: 'center',
+						md: 'center',
+						lg: 'center',
+						
+					},
 				}}>
-				<div className='pictureWrapper'>
+				<div className="pictureWrapper">
 					<div className="pictureContainer">
 						<img className="myPicSpecifics" src={MyPic} alt="me" />
 					</div>
