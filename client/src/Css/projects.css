@@ -75,6 +75,7 @@
     .projectsContainer {
     border: 1px solid red;
     justify-content: center;
+    margin-left: 50px;
     align-items: center;
     display: flex;
     flex-direction: column;

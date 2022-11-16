@@ -40,7 +40,7 @@
     z-index: 10;
     background: transparent;
     cursor: pointer;
-    border: none
+    border: none;
 }
 
 li {
@@ -67,6 +67,17 @@ li {
     z-index: 9;
     }
     .NAV button {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        margin-left: 500px;
+    }
+    .navbar-container {
+        width: 110%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-container {
+        width: 550px;
     }
 }
